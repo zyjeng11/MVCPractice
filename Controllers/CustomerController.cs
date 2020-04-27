@@ -41,17 +41,7 @@ namespace Vidly.Controllers
 
             return View(customer);
         }
-
-        public ActionResult New()
-        {
-            var membershipType = _context.MemberShipTypes.ToList();
-            var viewModel = new CustomerFormViewModel
-            {
-                MemberShipTypes = membershipType
-            };
-            return View("CustomerForm", viewModel);
-        }
-
+        
         [HttpPost]
         public ActionResult Save(Customer customer)
         {
@@ -68,6 +58,16 @@ namespace Vidly.Controllers
 
             _context.SaveChanges();
             return RedirectToAction("Index", "Customer");
+        }
+
+        public ActionResult New()
+        {
+            var membershipType = _context.MemberShipTypes.ToList();
+            var viewModel = new CustomerFormViewModel
+            {
+                MemberShipTypes = membershipType
+            };
+            return View("CustomerForm", viewModel);
         }
 
         public ActionResult Edit(int id)

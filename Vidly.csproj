@@ -207,9 +207,18 @@
     <Compile Include="Migrations\202004270622361_AddMembershipTypeName.Designer.cs">
       <DependentUpon>202004270622361_AddMembershipTypeName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004270930252_AddMovieGenre.cs" />
+    <Compile Include="Migrations\202004270930252_AddMovieGenre.Designer.cs">
+      <DependentUpon>202004270930252_AddMovieGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004270942228_ChangeGenreIdToNotNull.cs" />
+    <Compile Include="Migrations\202004270942228_ChangeGenreIdToNotNull.Designer.cs">
+      <DependentUpon>202004270942228_ChangeGenreIdToNotNull.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MemberShipType.cs" />
@@ -241,6 +250,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Shared\bootstrap-grid.css" />
+    <Content Include="Views\Shared\bootstrap-grid.min.css" />
+    <Content Include="Views\Shared\bootstrap-reboot.css" />
+    <Content Include="Views\Shared\bootstrap-reboot.min.css" />
+    <Content Include="Views\Shared\bootstrap.css" />
+    <Content Include="Views\Shared\bootstrap.min.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -320,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004270622361_AddMembershipTypeName.resx">
       <DependentUpon>202004270622361_AddMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004270930252_AddMovieGenre.resx">
+      <DependentUpon>202004270930252_AddMovieGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004270942228_ChangeGenreIdToNotNull.resx">
+      <DependentUpon>202004270942228_ChangeGenreIdToNotNull.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
