@@ -203,6 +203,10 @@
     <Compile Include="Migrations\202004270449167_AddMovieTable.Designer.cs">
       <DependentUpon>202004270449167_AddMovieTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004270622361_AddMembershipTypeName.cs" />
+    <Compile Include="Migrations\202004270622361_AddMembershipTypeName.Designer.cs">
+      <DependentUpon>202004270622361_AddMembershipTypeName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -212,6 +216,7 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -271,7 +276,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\Detail.cshtml" />
-    <Content Include="Views\Customer\New.cshtml" />
+    <Content Include="Views\Customer\CustomerForm.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004270449167_AddMovieTable.resx">
       <DependentUpon>202004270449167_AddMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004270622361_AddMembershipTypeName.resx">
+      <DependentUpon>202004270622361_AddMembershipTypeName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

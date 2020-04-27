@@ -227,3 +227,4 @@ D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.pdb
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddCustomerBirthdayColumn.resources
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieTable.resources
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
+D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipTypeName.resources
