@@ -214,7 +214,6 @@ D:\PracticeCode\Vidly\Vidly\bin\Microsoft.Owin.Security.Twitter.xml
 D:\PracticeCode\Vidly\Vidly\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\PracticeCode\Vidly\Vidly\bin\Microsoft.Owin.Security.OAuth.xml
 D:\PracticeCode\Vidly\Vidly\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.InitialModel.resources
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSubscribedToCustomer.resources
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
@@ -225,3 +224,4 @@ D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompileInputs.cache
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.dll
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.pdb
+D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddCustomerBirthdayColumn.resources

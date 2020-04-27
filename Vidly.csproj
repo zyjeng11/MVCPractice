@@ -195,6 +195,10 @@
     <Compile Include="Migrations\202003280840084_ApplyInotationToCustomerName.Designer.cs">
       <DependentUpon>202003280840084_ApplyInotationToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004270434140_AddCustomerBirthdayColumn.cs" />
+    <Compile Include="Migrations\202004270434140_AddCustomerBirthdayColumn.Designer.cs">
+      <DependentUpon>202004270434140_AddCustomerBirthdayColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -297,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202003280840084_ApplyInotationToCustomerName.resx">
       <DependentUpon>202003280840084_ApplyInotationToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004270434140_AddCustomerBirthdayColumn.resx">
+      <DependentUpon>202004270434140_AddCustomerBirthdayColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
