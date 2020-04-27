@@ -19,12 +19,13 @@
 <table>
     <tr>
         <th>Movie</th>
-        <th></th>
+        <th>Genre</th>
     </tr>
     @foreach (var movie in Model)
     {
         <tr>
             <th>@movie.Name</th>
+            <th>@movie.Genre.Name</th>
         </tr>
     }
 </table>
