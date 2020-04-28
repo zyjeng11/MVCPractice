@@ -230,3 +230,4 @@ D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.csprojAssemblyReference.cache
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipTypeName.resources
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieGenre.resources
 D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.ChangeGenreIdToNotNull.resources
+D:\PracticeCode\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddReleaseDateAndStockNumber.resources

@@ -5,28 +5,29 @@
 }
 
 <style>
-    table{
-        width:80%;
+    table {
+        width: 80%;
     }
-    th, td{
+
+    th, td {
         padding: 15px;
         text-align: left;
     }
-
 </style>
 
 <h2>CustomerView</h2>
+@Html.ActionLink("Add New Customer", "New", "Customer", null, new { @class = "btn btn-primary" })
 
 <table>
     <tr>
         <th>Customer</th>
         <th>Discount Rate</th>
     </tr>
-    @foreach(var customer in Model)
-    {        
+    @foreach (var customer in Model)
+    {
         <tr>
             <td>
-                @Html.ActionLink(customer.Name, "Edit", "Customer", new { id = customer.Id }, null)          
+                @Html.ActionLink(customer.Name, "Edit", "Customer", new { id = customer.Id }, null)
             </td>
             <td>
                 @customer.MembershipType.DiscountRate%
@@ -35,5 +36,3 @@
     }
 
 </table>
-
-@Html.ActionLink("Add New Customer", "New", "Customer")

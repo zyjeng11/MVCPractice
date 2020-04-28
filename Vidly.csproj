@@ -215,6 +215,10 @@
     <Compile Include="Migrations\202004270942228_ChangeGenreIdToNotNull.Designer.cs">
       <DependentUpon>202004270942228_ChangeGenreIdToNotNull.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202004280243071_AddReleaseDateAndStockNumber.cs" />
+    <Compile Include="Migrations\202004280243071_AddReleaseDateAndStockNumber.Designer.cs">
+      <DependentUpon>202004280243071_AddReleaseDateAndStockNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -226,6 +230,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -293,6 +298,7 @@
     <Content Include="Views\Customer\Detail.cshtml" />
     <Content Include="Views\Customer\CustomerForm.cshtml" />
     <Content Include="Views\Movie\Index.cshtml" />
+    <Content Include="Views\Movie\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -341,6 +347,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004270942228_ChangeGenreIdToNotNull.resx">
       <DependentUpon>202004270942228_ChangeGenreIdToNotNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004280243071_AddReleaseDateAndStockNumber.resx">
+      <DependentUpon>202004280243071_AddReleaseDateAndStockNumber.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

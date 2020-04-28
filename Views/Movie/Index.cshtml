@@ -15,6 +15,7 @@
 </style>
 
 <h2>Index</h2>
+@Html.ActionLink("New", "MovieForm", "Movie", null, new { @class="btn btn-primary"})
 
 <table>
     <tr>
@@ -24,8 +25,8 @@
     @foreach (var movie in Model)
     {
         <tr>
-            <th>@movie.Name</th>
-            <th>@movie.Genre.Name</th>
+            <td>@Html.ActionLink(movie.Name, "Detail", "Movie", new { id = movie.Id })</td>
+            <td>@movie.Genre.Name</td>
         </tr>
     }
 </table>
