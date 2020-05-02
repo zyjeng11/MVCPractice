@@ -20,6 +20,7 @@
     <div class="form-group">
         @Html.LabelFor(m => m.Customer.MemberShipTypeId)
         @Html.DropDownListFor(m => m.Customer.MemberShipTypeId, new SelectList(Model.MemberShipTypes, "Id", "Name"), "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.MemberShipTypeId)
     </div>
     <div class="checkbox">
         <label>
