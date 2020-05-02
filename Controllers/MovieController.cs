@@ -46,9 +46,18 @@ namespace Vidly.Controllers
         }
 
         [HttpPost]
-        public ActionResult Save(Movie model)
+        public ActionResult Save(MovieFormViewModel model)
         {
-            _context.Movies.Add(model);
+            if(model.Movies.Id == 0)
+                _context.Movies.Add(model.Movies);
+            else
+            {
+                var movieInDb = _context.Movies.SingleOrDefault(m => m.Id == model.Movies.Id);
+                movieInDb.Name = model.Movies.Name;
+                movieInDb.GenreId = model.Movies.GenreId;
+                movieInDb.ReleaseDate = model.Movies.ReleaseDate;
+                movieInDb.StockNumber = model.Movies.StockNumber;
+            }
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Movie");
