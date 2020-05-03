@@ -16,8 +16,9 @@ namespace Vidly.Models
             if (customer.Birthday == null)
                 return new ValidationResult("Birthdate is required");
 
-            //var age = DateTime.Today.Year - customer.Birthday;
-            return null;
+            var age = DateTime.Today.Year - customer.Birthday.Year;
+
+            return (age >= 18) ? ValidationResult.Success : new ValidationResult("未滿18歲不能訂閱");
         }
     }
 }
