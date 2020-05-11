@@ -18,30 +18,65 @@ namespace Vidly.Controllers.api
         }
 
         // GET api/<controller>
-        public IEnumerable<Customer> Get()
+        public IEnumerable<Customer> GetCustomer()
         {
             return _context.Customers.ToList();
         }
 
         // GET api/<controller>/5
-        public string Get(int id)
+        public Customer GetCustomer(int id)
         {
-            return "value";
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+            if (customer == null)
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+
+            return customer;
         }
 
         // POST api/<controller>
-        public void Post([FromBody]string value)
+        [HttpPost]
+        public Customer CreateCustomer(Customer customer)
         {
+            if (!ModelState.IsValid)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+
+            return customer;
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        [HttpPut]
+        public void UpdateCustomer(int id, Customer customer)
         {
+            if (!ModelState.IsValid)
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+
+            var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customerInDb == null)
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+
+            customerInDb.Name = customer.Name;
+            customerInDb.IsSubscribedToNewsLetter = customer.IsSubscribedToNewsLetter;
+            customerInDb.MemberShipTypeId = customer.MemberShipTypeId;
+            customerInDb.Birthday = customer.Birthday;
+
+            _context.SaveChanges();
         }
 
-        // DELETE api/<controller>/5
-        public void Delete(int id)
+        // DELETE api/<controller>/5   
+        [HttpDelete]
+        public void DeleteCustomer(int id)
         {
+            var customerInDb = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customerInDb == null)
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+
+            _context.Customers.Remove(customerInDb);
+            _context.SaveChanges();
         }
     }
 }
