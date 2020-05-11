@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace Vidly.Controllers.api
 {
-    public class CustomersController1 : ApiController
+    public class CustomController : ApiController
     {
         // GET api/<controller>
         public IEnumerable<string> Get()
