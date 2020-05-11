@@ -4,15 +4,23 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Vidly.Models;
 
 namespace Vidly.Controllers.api
 {
     public class CustomController : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
+        private ApplicationDbContext _context;
+
+        public CustomController()
         {
-            return new string[] { "value1", "value2" };
+            _context = new ApplicationDbContext();
+        }
+
+        // GET api/<controller>
+        public IEnumerable<Customer> Get()
+        {
+            return _context.Customers.ToList();
         }
 
         // GET api/<controller>/5
