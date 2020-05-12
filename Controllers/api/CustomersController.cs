@@ -8,11 +8,11 @@ using Vidly.Models;
 
 namespace Vidly.Controllers.api
 {
-    public class CustomController : ApiController
+    public class CustomersController : ApiController
     {
         private ApplicationDbContext _context;
 
-        public CustomController()
+        public CustomersController()
         {
             _context = new ApplicationDbContext();
         }
